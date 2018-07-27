@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+:root {
+    font-family: 'Oswald';
+}
+
+body {
+    max-width: 800px;
+    margin: auto;
+}
+
+header nav ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+header nav p {
+    font-family: 'Courier';
+}
+
+header nav p {
+    font-size: 48px;
+}
+
+header nav ul li {
+    list-style-type: none;
+}
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 450px) {
+    header nav {
+        display: flex;
+    }
+    header ul {
+        display: flex;
+        flex: 1;
+        align-items: center;
+    }
+    header ul li:last-child {
+        margin-left: auto;
+    }
+    header nav ul li {
+        margin-left: 5%;
+    }
+}
+
+header div.banner {
+    height: 500px;
+    background-image: url(../img/hotyn.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header div.banner div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+header div.banner div h1 {
+    min-width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 4rem;
+}
+
+.product-card {
+    border: 1px solid black;
+    padding: 3px;
+}
+
+.product-card img {
+    width: 100%;
+}
+
+.product-card div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.product-card div button {
+    width: 40%;
+}
+
+@media (min-width: 400px) {
+    .product-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5px;
+        row-gap: 5px;
+    }
+}
+
+@media (min-width: 500px) {
+    .product-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;        
+    }
+}
+
+@media (min-width: 600px) {
+    .product-list {
+        display: grid;
+        grid-template-columns: repeat (4, 1fr);        
+    }
+}
